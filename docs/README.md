@@ -10,7 +10,7 @@
 Do you want printable cards for your D&D 5e game? Then try **Giffyglyph's Card Codex**, a collection of printable cards suitable for any D&D game!
 
 * [Read the Latest PDF (v0.2.0)](https://github.com/giffyglyph/giffyglyphs-card-codex/releases/download/v0.2.0/giffyglyphs_card_codex_v0_2_0.pdf)
-* [Read the Changelog](https://github.com/giffyglyph/giffyglyphs-monster-maker/blob/master/docs/CHANGELOG.md) 
+* [Read the Changelog](https://github.com/giffyglyph/giffyglyphs-card-codex/blob/master/docs/CHANGELOG.md) 
 
 ## Features
 
