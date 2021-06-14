@@ -1,0 +1,10 @@
+.page--faq {
+
+	.button-group--links {
+		margin-bottom: 7.5px;
+
+		.button + * {
+			margin-top: 7.5px;
+		}
+	}
+}

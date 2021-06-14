@@ -1,0 +1,15 @@
+{
+  "name":"card_codex",
+  "binder": {
+    "version": {
+      "minimum": "1.0.0",
+      "maximum": "1.0.0"
+    },
+    "scripts": [ "modules/card_codex.js" ],
+    "formats": {
+      "book": {
+        "languages": [ "en" ]
+      }
+    }
+  }
+}

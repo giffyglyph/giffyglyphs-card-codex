@@ -1,0 +1,419 @@
+// Styles for a card (bridge size).
+
+$card-mini-height: 6.35cm;
+$card-mini-width: 4.445cm;
+$card-mini-font-size: 8.5pt;
+$card-mini-line-height: 1.1;
+$card-mini-border-width: 8px;
+$card-mini-border-radius-inner: 6px;
+$card-mini-border-radius-outer: 10px;
+$card-mini-header-font-size: 11pt;
+$card-mini-header-height: 30px;
+$card-mini-header-shadow-height: -11.28px;
+$card-mini-bg-offset: -52px;
+$card-mini-fg-offset: 81px;
+$card-mini-content-height: 57px;
+$card-mini-content-padding: 5px 10px 16px;
+$card-mini-content-font-size: 8.5pt;
+$card-mini-footer-font-size: 6pt;
+
+$card-bridge-height: 8.89cm;
+$card-bridge-width: 5.715cm;
+$card-bridge-font-size: 8.5pt;
+$card-bridge-line-height: 1.1;
+$card-bridge-border-width: 8px;
+$card-bridge-border-radius-inner: 6px;
+$card-bridge-border-radius-outer: 10px;
+$card-bridge-header-font-size: 13pt;
+$card-bridge-header-height: 35px;
+$card-bridge-header-shadow-height: -14.84px;
+$card-bridge-bg-offset: -68px;
+$card-bridge-fg-offset: 107px;
+$card-bridge-content-height: 111px;
+$card-bridge-content-padding: 9px 10px 21px;
+$card-bridge-content-font-size: 8.5pt;
+$card-bridge-footer-font-size: 6pt;
+
+$card-poker-height: 8.89cm;
+$card-poker-width: 6.35cm;
+$card-poker-font-size: 8.5pt;
+$card-poker-line-height: 1.1;
+$card-poker-border-width: 10px;
+$card-poker-border-radius-inner: 12px;
+$card-poker-border-radius-outer: 10px;
+$card-poker-header-font-size: 13pt;
+$card-poker-header-height: 35px;
+$card-poker-header-shadow-height: -16.63px;
+$card-poker-bg-offset: -76px;
+$card-poker-fg-offset: 119px;
+$card-poker-content-height: 89px;
+$card-poker-content-padding: 7px 10px 24px;
+$card-poker-content-font-size: 8.5pt;
+$card-poker-footer-font-size: 6pt;
+
+$card-tarot-height: 12.065cm;
+$card-tarot-width: 6.985cm;
+$card-tarot-font-size: 8.5pt;
+$card-tarot-line-height: 1.1;
+$card-tarot-border-width: 8px;
+$card-tarot-border-radius-inner: 6px;
+$card-tarot-border-radius-outer: 10px;
+$card-tarot-header-font-size: 13pt;
+$card-tarot-header-height: 35px;
+$card-tarot-header-shadow-height: -18.42px;
+$card-tarot-bg-offset: -84px;
+$card-tarot-fg-offset: 132px;
+$card-tarot-content-height: 190px;
+$card-tarot-content-padding: 8px 12px 26px;
+$card-tarot-content-font-size: 8.5pt;
+$card-tarot-footer-font-size: 6pt;
+
+$card-large-height: 14.605cm;
+$card-large-width: 8.89cm;
+$card-large-font-size: 8.5pt;
+$card-large-line-height: 1.1;
+$card-large-border-width: 8px;
+$card-large-border-radius-inner: 6px;
+$card-large-border-radius-outer: 10px;
+$card-large-header-font-size: 13pt;
+$card-large-header-height: 35px;
+$card-large-header-shadow-height: -23.77px;
+$card-large-bg-offset: -109px;
+$card-large-fg-offset: 170px;
+$card-large-content-height: 229px;
+$card-large-content-padding: 10px 14px 34px;
+$card-large-content-font-size: 8.5pt;
+$card-large-footer-font-size: 6pt;
+
+card {
+	box-sizing: border-box;
+	display: block;
+	border-radius: $card-poker-border-radius-outer;
+	position: relative;
+	font-family: $font-body-sans;
+	text-align: center;
+	font-size: $card-poker-font-size;
+	line-height: $card-poker-line-height;
+	padding: $card-poker-border-width;
+	overflow: hidden;
+	background: black;
+	color: white;
+	height: $card-poker-height;
+	width: $card-poker-width;
+	display: flex;
+
+	&.invalid {
+		border: 1px dotted black;
+		opacity: 0.5;
+		background: white;
+
+		> * {
+			display: none;
+		}
+	}
+
+	> * {
+		width: 100%;
+	}
+
+	&[data-side='back'] {
+
+
+		section.front {
+			display: none;
+		}
+
+		section.back .image {
+			background-image: url('../images/cards/themes/mimic-blue/back-bg.png');
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+		}
+	}
+
+	&[data-side='front'] {
+
+		section.back {
+			display: none;
+		}
+
+		section.front {
+			display: flex;
+			flex-direction: column;
+			border: 1.5px solid #866e25;
+			border-radius: $card-poker-border-radius-inner;
+			overflow: hidden;
+			background: white;
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				background-image: url("../images/cards/themes/mimic-blue/front-bg.png");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding: 0 0 83.8%;
+				margin-bottom: 8%;
+				width: 100%;
+				z-index: 1;
+				bottom: 0;
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: none;
+				background-image: url("../images/cards/themes/mimic-blue/front-bg-icon.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				margin: 0 auto;
+				padding: 0 0 40%;
+				left: 30%;
+				width: 40%;
+				z-index: 1;
+				bottom: 53px;
+				opacity: 0.05;
+			}
+
+			> * {
+				z-index: 2;
+			}
+
+			header {
+				flex-grow: 0;
+				width: 100%;
+				height: 0;
+				background-size: cover;
+				background-image: url('../images/cards/themes/mimic-blue/front-top.png');
+				background-repeat: no-repeat;
+				padding-top: 0;
+				margin-bottom: -1%;
+				padding-bottom: 76%;
+				position: relative;
+
+				.icon {
+					position: relative;
+					width: 61.5%;
+					margin: 0 auto;
+					padding: 4%;
+					box-sizing: border-box;
+
+					img {
+						border-radius: 100%;
+						width: 100%;
+
+						&.pf {
+							display: none;
+						}
+					}
+				}
+
+				.title {
+					font-size: 11pt;
+					font-weight: bold;
+					font-family: $font-body-sans-caps;
+					margin-top: -5.25%;
+
+					text {
+						stroke-width: 2px;
+					}
+				}
+
+				.category {
+					font-size: 4.5pt;
+					text-transform: uppercase;
+					margin-top: -2%;
+
+					text {
+						stroke-width: 1px;
+					}
+				}
+
+				text {
+					stroke: black;
+					fill: white;
+					paint-order: stroke fill;
+				}
+			}
+
+			section.content {
+				flex-grow: 1;
+				color: black;
+				padding: 0 $card-poker-border-width;
+				overflow: hidden;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				> :first-child {
+					margin-top: 0;
+				}
+
+				> :last-child {
+					margin-bottom: 0;
+				}
+
+				ul {
+					padding: 0 0 0 1.06em;
+					list-style: none;
+					width: 100%;
+
+					li {
+
+						+ li {
+							margin-top: 0.353em;
+						}
+
+						&::before {
+							content: '\25C8';
+							color: #024570;
+							margin-left: -1.06em;
+							position: relative;
+							font-size: 90%;
+							width: 1.06em;
+							display: inline-block;
+						}
+					}
+				}
+
+				ol {
+					padding: 0 0 0 1.06em;
+
+					li {
+
+						+ li {
+							margin-top: 0.353em;
+						}
+					}
+				}
+			}
+
+			footer {
+				flex-grow: 0;
+				height: 0;
+				background-size: cover;
+				font-family: $font-body-sans-caps;
+				text-transform: uppercase;
+				background-image: url('../images/cards/themes/mimic-blue/front-bottom.png');
+				background-repeat: no-repeat;
+				padding-bottom: 23.6%;
+				position: relative;
+				margin-top: -3%;
+
+				> * {
+					width: 100%;
+					font-size: 5pt;
+					height: 0;
+				}
+
+				.deck {
+					position: absolute;
+					top: 0;
+					padding-top: 5.5%;
+					font-weight: bold;
+					opacity: .25;
+				}
+
+				.copywrite {
+					position: absolute;
+					bottom: 0;
+					padding-bottom: 5.5%;
+
+					text {
+						stroke: black;
+						fill: white;
+						stroke-width: 1px;
+						paint-order: stroke fill;
+					}
+				}
+			}
+
+			// MODIFIERS
+
+			&.content-font-size-4 .content {
+				font-size: 8pt;
+			}
+
+			&.content-font-size-3 .content {
+				font-size: 7.5pt;
+			}
+
+			&.content-font-size-2 .content {
+				font-size: 7pt;
+			}
+
+			&.content-font-size-1 .content {
+				font-size: 6.5pt;
+			}
+
+			&.content-font-center .content {
+				text-align: center;
+			}
+		}
+	}
+
+	&[data-theme="mimic-pf"][data-side='front'] {
+
+		section.front {
+
+			&::before {
+				background-image: none;
+			}
+
+			header {
+				background-image: url('../images/cards/themes/mimic-pf/front-top.png');
+
+				img {
+					filter: saturate(0) brightness(0.9) contrast(0.5)
+				}
+
+				.category text {
+					stroke-width: 0;
+				}
+			}
+
+			footer {
+				background-image: url('../images/cards/themes/mimic-pf/front-bottom.png');
+
+				.deck {
+					padding-top: 7.5%;
+				}
+
+				.copywrite text {
+					stroke-width: 0;
+				}
+			}
+
+			&::after {
+				background-image: url('../images/cards/themes/mimic-pf/front-bg-icon.png');
+				bottom: 50px;
+			}
+		}
+	}
+
+	&[data-theme="mimic-pf"][data-side='back'] {
+
+		section.back .image {
+			background-image: url('../images/cards/themes/mimic-pf/back-bg.png');
+		}
+	}
+
+	&[data-bleed="full"] {
+		padding: 0;
+		box-sizing: content-box;
+		border: 1px solid #91979a;
+
+		section.front {
+			border: 0;
+			border-radius: 0;
+
+			section.content {
+				padding: 0 15px;
+			}
+		}
+	}
+}

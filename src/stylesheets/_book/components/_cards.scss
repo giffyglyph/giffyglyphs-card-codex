@@ -1,0 +1,30 @@
+cards {
+	display: inline-grid;
+	grid-column-gap: 0.15875cm;
+	grid-row-gap: 0.15875cm;
+
+	&[data-bleed='full'] {
+		grid-column-gap: calc(0.15875cm - 2px);
+		grid-row-gap: calc(0.15875cm - 2px);
+	}
+
+	&[data-size='mini'] {
+		grid-template-columns: repeat(4, auto);
+	}
+
+	&[data-size='bridge'] {
+		grid-template-columns: repeat(3, auto);
+	}
+
+	&[data-size='poker'] {
+		grid-template-columns: repeat(3, auto);
+	}
+
+	&[data-size='tarot'] {
+		grid-template-columns: repeat(2, auto);
+	}
+
+	&[data-size='large'] {
+		grid-template-columns: repeat(2, auto);
+	}
+}

@@ -1,0 +1,287 @@
+{
+	"output":{
+		"filename":"giffyglyphs_card_codex"
+	},
+	"meta": {
+		"version":"0.2",
+		"created":"December 2020",
+		"author":"Giffyglyph",
+		"title":{
+			"short":"Card Codex",
+			"long":"Giffyglyph's Card Codex"
+		},
+		"description":"Printable cards and templates for your D&D 5e games.",
+		"keywords":[
+			"dungeons",
+			"dragons",
+			"D&D",
+			"5e",
+			"Giffyglyph",
+			"Card Codex"
+		],
+		"urls":{
+			"pdf":"https://drive.google.com/file/d/1uyV8AWvsDQ3jKMpeXn7ZhlPXM8slg_yv/view?usp=sharing"
+		}
+	},
+	"contents":[
+		{
+			"type":"COVER_FRONT",
+			"title":{
+				"highlight":"Giffyglyph's",
+				"main":"Card Codex"
+			},
+			"icon":{
+				"filename":"cards-d20",
+				"css":"transform: scale(1.1)"
+			},
+			"blurb":"Printable cards and templates<br/>for your D&D 5e games",
+			"author":"Giffyglyph"
+		},
+		{
+			"type":"ENDPAPER"
+		},
+		{
+			"type":"PAGE_TITLE",
+			"title":{
+				"highlight":"Giffyglyph's",
+				"main":"Card Codex"
+			},
+			"icon":{
+				"filename":"cards-d20",
+				"css":"transform: scale(1.35)"
+			},
+			"thanks":[
+				"<strong>Writing, Art, & Layout:</strong> Giffyglyph",
+				"<strong>Iconography:</strong> <a href='http://www.game-icons.net'>game-icons.net</a>",
+				"<strong>D&D 5e SRD:</strong> Wizards of the Coast",
+				"<span class='spacer'><strong>Discord Defenders:</strong> Lex Raine, Raspilicious</span>",
+				"<strong>Twitch Tyrant:</strong> Strider"
+			],
+			"testers":[
+				"Ady Veisz Dragia",
+        "Anthony Campla",
+        "Brady",
+        "CriticalGameMastery",
+        "Douglas",
+        "FrostNoxia",
+        "George",
+        "OHR Gaming Network",
+        "Seth Cooper",
+        "Strider",
+				"and The Cult of 46"
+			],
+			"emptyLines":0
+		},
+		{
+			"type":"PAGE_INTRODUCTION",
+			"title":"Giffyglyph's Card Codex",
+			"blurb":"<p>Before setting out into adventure, a wise adventurer knows to prepare ahead to ensure they have the right tools for the dangers ahead—weapons, armor, equipment, and spells.</p><p>But as a player, how do you keep track of all your gear and condition effects? As a DM, how do you hand out treasure and rewards to your players? If you like to use physical cards in your D&D 5e games, then welcome to <i>Giffyglyph's Card Codex</i>.</p><p>This supplement contains a variety of printable cards and templates to help you run your D&D games more easily—condition cards, equipment cards, templates and more in both color and print-friendly variants. Build up your deck, brave hero, and head out into adventure!</p>",
+			"features":[
+				"Create your own deck of printable cards for 5e status effects and conditions.",
+        "Designs for both color and print-friendly card variants.",
+        "Basic card templates—create custom cards for your own table and D&D campaigns.",
+				"<strong>Not for Resale:</strong> These cards and templates are provided for personal use. Print them for use at your own gaming tables, but please don't use any of the artwork contained for resale or for profit."
+			]
+		},
+		{
+			"type":"SECTION",
+			"title":{
+				"highlight":"Part 1",
+				"main":"Card Categories",
+				"icon":"fas fa-bolt"
+			},
+			"chapters":[
+				{
+					"filename":"cards_5e_conditions",
+					"title":"Conditions",
+					"id":"cards-5e-conditions",
+					"description":"5e condition cards."
+				},
+				{
+					"filename":"cards_empty",
+					"title":"Blanks",
+					"id":"cards-empty",
+					"description":"Blank card templates."
+				},
+				{
+					"filename":"cards_back",
+					"title":"Backs",
+					"id":"cards-backs",
+					"description":"Backing images for your cards."
+				}
+			]
+		},
+		{
+			"type":"SECTION",
+			"title":{
+				"highlight":"Appendicies",
+				"main":"The Extras",
+				"icon":"fas fa-question-circle"
+			},
+			"isAppendix":"true",
+			"chapters":[
+				{
+					"filename":"faq",
+					"title":"FAQ",
+					"id":"faq",
+					"description":"Frequently asked questions."
+				}
+			]
+		},
+		{
+			"type":"ADVERTS",
+			"isAppendix":"true",
+			"icon":{
+				"filename":"cards-d20",
+				"css":"transform: scale(1.1)"
+			},
+			"adverts":[
+				{
+					"title": "Darker Dungeons",
+					"blurb": "Want to make your D&D 5e campaign more deadly for your players? Then try <strong>Giffyglyph's Darker Dungeons</strong>, 150+ pages of modular rules, tweaks, and advice:",
+					"features":[
+						"Manage equipment and gear with the <strong>Active Inventory</strong> system.",
+						"Track <strong>survival conditions</strong> in your game with hunger, thirst, and fatigue.",
+						"Add lingering <strong>wounds and injuries</strong> to combat.",
+						"Add risk to casting magic with <strong>magical burnout</strong>.",
+						"Create <strong>randomised characters</strong> and <strong>0th-level rookies</strong>.",
+						"And more."
+					],
+					"link":"giffyglyph.com/darkerdungeons"
+				},
+				{
+					"title":"Roll20 Character Sheet",
+					"blurb":"Want to play <i>Giffyglyph's Darker Dungeons</i> online with Roll20? Then try <strong>Giffyglyph's Roll20 Character Sheet</strong>, a fully-featured and automated sheet compatible with any 5e game:",
+					"features":[
+						"A brand <strong>new layout and design</strong>.",
+						"6 carefully laid-out <strong>tabs, panels, and options</strong>.",
+						"Compatible with <strong>any D&D 5e game</strong>.",
+						"Full drag-and-drop <strong>compendium support</strong>.",
+						"<strong>Track your inventory</strong> using weight or slots.",
+						"Toggle <strong>Darker Dungeons modules</strong> on or off to suit your own game.",
+						"And more."
+					],
+					"link":"giffyglyph.com/darkerdungeons"
+				},
+				{
+					"title":"Monster Maker",
+					"blurb":"Want to make some new D&D 5e monsters in just a few seconds? Then try <strong>Giffyglyph's Monster Maker</strong>, 60+ pages of monster tables, tweaks, and advice:",
+					"features":[
+						"Swap challenge ratings for easy <strong>monster levels</strong>.",
+						"Build minions, elites, and solo monsters with simple <strong>monster stats</strong>.",
+						"Give monsters an identity with <strong>monster roles</strong>.",
+						"Add <strong>traits & powers</strong> for variety in your combat.",
+						"Use <strong>freeform attacks</strong> for dynamic encounters.",
+						"Build encounters in seconds with <strong>monster points</strong>.",
+						"Run multi-phase <strong>boss encounters</strong>.",
+						"And more."
+					],
+					"link":"giffyglyph.com/monstermaker"
+				},
+				{
+					"title":"Monster Maker App",
+					"blurb":"Want to create some new monsters using your phone or computer? Then try <strong>Giffyglyph's Monster Maker webapp</strong>:",
+					"features":[
+						"Create your own <strong>monster vault</strong> in a few clicks.",
+						"Build <strong>minions, standards, elites, & solos</strong>.",
+						"Apply <strong>monster roles</strong> for quick, balanced variety.",
+						"<strong>Save</strong> your monster vault for later use.",
+						"Customize monsters with <strong>traits, powers, & notes</strong>.",
+						"<strong>Export</strong> your vault monsters to share with others.",
+						"Build monsters in either <strong>quickstart</strong> or <strong>manual</strong> modes.",
+						"Works on phone, tablet, or computer with a <strong>mobile-friendly</strong> and fully-responsive layout.",
+						"And more."
+					],
+					"link":"giffyglyph.com/monstermaker/app"
+				}
+			]
+		},
+		{
+			"type":"ENDPAPER"
+		},
+		{
+			"type":"COVER_BACK",
+			"title":"Delve into<br/>Deckbuilding",
+			"blurb":[
+				"This supplement offers printable cards and templates to help you run your D&D games more smoothly."
+			],
+			"features": [
+				"New <strong>printable cards</strong> and for your D&D 5e games"
+			],
+			"author":"Giffyglyph"
+		}
+	],
+	"patrons":{
+		"total": 287,
+		"sigils": [
+			{
+				"name":"Ady Veisz Dragia",
+				"title":"Collector Enthusiast"
+			},
+			{
+				"name":"Alexander von Bose",
+				"title":""
+			},
+			{
+				"name":"Anthony Campla",
+				"title":""
+			},
+			{
+				"name":"Barkston",
+				"title":""
+			},
+			{
+				"name":"Birb Marrows",
+				"title":""
+			},
+			{
+				"name":"cappyCapslock",
+				"title":""
+			},
+			{
+				"name":"Dario Hajic",
+				"title":""
+			},
+			{
+				"name":"Dor Sivan",
+				"title":""
+			},
+			{
+				"name":"Faolan Twinbear",
+				"title":""
+			},
+			{
+				"name":"George",
+				"title":""
+			},
+			{
+				"name":"Hoots Kenku",
+				"title":""
+			},
+			{
+				"name":"JP Callahan Jr",
+				"title":""
+			},
+			{
+				"name":"Lex Raine",
+				"title":""
+			},
+			{
+				"name":"MickeyMinaj",
+				"title":""
+			},
+			{
+				"name":"Strider",
+				"title":"The Great Distrupter"
+			},
+			{
+				"name":"Tristan Bacinett",
+				"title":""
+			},
+			{
+				"name":"Velivanne",
+				"title":""
+			}
+		]
+	}
+}

@@ -1,0 +1,52 @@
+.theme--pf {
+
+	card[data-side='front'] {
+
+		section.front {
+
+			&::before {
+				background-image: none;
+			}
+
+			header {
+				background-image: url('../images/cards/themes/mimic-pf/front-top.png');
+
+				img {
+					filter: saturate(0) brightness(0.9) contrast(0.5)
+				}
+
+				.category text {
+					stroke-width: 0;
+				}
+			}
+
+			section.content ul li::before {
+				color: inherit;
+			}
+
+			footer {
+				background-image: url('../images/cards/themes/mimic-pf/front-bottom.png');
+
+				.deck {
+					padding-top: 7.5%;
+				}
+
+				.copywrite text {
+					stroke-width: 0;
+				}
+			}
+
+			&::after {
+				background-image: url('../images/cards/themes/mimic-pf/front-bg-icon.png');
+				bottom: 50px;
+			}
+		}
+	}
+
+	card[data-side='back'] {
+
+		section.back .image {
+			background-image: url('../images/cards/themes/mimic-pf/back-bg.png');
+		}
+	}
+}
